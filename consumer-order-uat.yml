@@ -19,6 +19,12 @@ eureka:
 spring:
   application:
     name: consumer-order
+  #rabbitmq相关配置 15672是Web管理界面的端口；5672是MQ访问的端口
+  rabbitmq:
+    host: 192.168.56.102
+    port: 5672
+    username: root
+    password: root
 #设置feign客户端超时时间(OpenFeign默认支持ribbon)
 ribbon:
   #指的是建立连接所用的时间，适用于网络状况正常的情况下,两端连接所用的时间
