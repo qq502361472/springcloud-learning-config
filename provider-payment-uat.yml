@@ -7,6 +7,12 @@ spring:
     url: jdbc:mysql://192.168.56.102:3306/cloud21-learn?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: root
+  #rabbitmq相关配置 15672是Web管理界面的端口；5672是MQ访问的端口
+  rabbitmq:
+    host: 192.168.56.102
+    port: 5672
+    username: root
+    password: root
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
