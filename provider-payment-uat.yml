@@ -33,4 +33,4 @@ management:
       exposure:
         include: '*'
 project:
-  info: uat
+  info: uat1
