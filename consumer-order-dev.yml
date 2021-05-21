@@ -39,4 +39,4 @@ management:
       exposure:
         include: '*'
 project:
-  info: dev2
+  info: dev3
