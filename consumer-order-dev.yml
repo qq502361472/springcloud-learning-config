@@ -19,6 +19,12 @@ eureka:
 spring:
   application:
     name: consumer-order
+  zipkin:
+    base-url: http://192.168.56.102:9411
+  sleuth:
+    sampler:
+      #采样率值介于 0 到 1 之间，1 则表示全部采集
+      probability: 1
   cloud:
     stream:
       binders: # 在此处配置要绑定的rabbitmq的服务信息；

@@ -19,6 +19,12 @@ eureka:
 spring:
   application:
     name: gateway
+  zipkin:
+    base-url: http://192.168.56.102:9411
+  sleuth:
+    sampler:
+      #采样率值介于 0 到 1 之间，1 则表示全部采集
+      probability: 1
   cloud:
     gateway:
       routes:
