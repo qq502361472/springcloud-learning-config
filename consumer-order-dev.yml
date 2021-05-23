@@ -63,4 +63,4 @@ management:
       exposure:
         include: '*'
 project:
-  info: dev
+  info: dev6

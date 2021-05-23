@@ -58,4 +58,4 @@ management:
       exposure:
         include: '*'
 project:
-  info: uat5
+  info: uat6
