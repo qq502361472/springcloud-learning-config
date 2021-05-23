@@ -18,7 +18,7 @@ spring:
           destination: payExchange # 表示要使用的Exchange名称定义
           content-type: application/json # 设置消息类型，本次为对象json，如果是文本则设置“text/plain”
           binder: defaultRabbit # 设置要绑定的消息服务的具体设置
-
+          group: payment-group #配置分组，分摊消息，且一旦服务down机，不分摊的消息也会持久化，服务器启动后会自动获取这部分消息
 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
